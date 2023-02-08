@@ -29,8 +29,7 @@
     "redux": "^4.2.0",
     "sass": "^1.57.1",
     "stripe": "^11.7.0",
-    "web-vitals": "^2.1.4",
-    "main": "index.js"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "nodemon server.js",
