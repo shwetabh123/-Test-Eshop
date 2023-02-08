@@ -39,9 +39,9 @@ const path = require("path");
 // }
 
 
-// app.get("/", (req, res) => {
-//   res.send("Welcome to eShop website.");
-// });
+app.get("/", (req, res) => {
+  res.send("Welcome to eShop website.");
+});
 
 const array = [];
 
