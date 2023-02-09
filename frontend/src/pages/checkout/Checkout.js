@@ -16,7 +16,10 @@ import {
 import { toast } from "react-toastify";
 import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
+const { REACT_APP_STRIPE_PK } = process.env;
+
+const stripePromise = loadStripe(REACT_APP_STRIPE_PK);
+//const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
 
 const Checkout = () => {
 
