@@ -76,6 +76,8 @@ const CheckoutForm = () => {
     }
   };
 
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage(null);

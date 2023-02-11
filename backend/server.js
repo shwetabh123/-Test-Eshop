@@ -70,7 +70,6 @@ app.post("/create-payment-intent", async (req, res) => {
     //const paymentIntent = await stripe.checkout.sessions.create({
     amount: calculateOrderAmount(items),
     currency: "inr",
-    payment_method_types: ["card","gpay"],
     automatic_payment_methods: {
       enabled: true,
     },
