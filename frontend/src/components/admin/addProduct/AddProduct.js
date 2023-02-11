@@ -21,6 +21,15 @@ const categories = [
   { id: 3, name: "Salwar Suit" },
   { id: 4, name: "Western Wear" },
 ];
+
+const size = [
+  { id: 1, name: "S" },
+  { id: 2, name: "M" },
+  { id: 3, name: "L" },
+  { id: 4, name: "XL" },
+  { id: 4, name: "XXL" }
+];
+
 const initialState = {
   name: "",
   imageURL: "",
@@ -233,14 +242,14 @@ const AddProduct = () => {
             <label>Product Size:</label>
             <select
               required
-              name="sie"
+              name="size"
               value={product.size}
               onChange={(e) => handleInputChange(e)}
             >
               <option value="" disabled>
                 -- Choose product size --
               </option>
-              {categories.map((cat) => {
+              {size.map((cat) => {
                 return (
                   <option key={cat.id} value={cat.name}>
                     {cat.name}
