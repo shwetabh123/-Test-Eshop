@@ -102,7 +102,9 @@ const decreaseCart = (product) => {
 
               <div className={styles.content}>
                 <h3>{product.name}</h3>
+
                 <p className={styles.price}>{`$${product.price}`}</p>
+
                 <p>{product.desc}</p>
                 <p>
                   <b>SKU</b> {product.id}
@@ -110,6 +112,10 @@ const decreaseCart = (product) => {
                 <p>
                   <b>Brand</b> {product.brand}
                 </p>
+                <p>
+                  <b>Size</b> {product.size}
+                </p>
+
                 <div className={styles.count}>
 
                 {isCartAdded < 0 ? null : (

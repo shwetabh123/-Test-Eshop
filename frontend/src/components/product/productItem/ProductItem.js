@@ -8,7 +8,7 @@ import {
   CALCULATE_TOTAL_QUANTITY,
 } from "../../../redux/slice/cartSlice";
 
-const ProductItem = ({ product, grid, id, name, price, desc, imageURL }) => {
+const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
 
   const dispatch = useDispatch();
 
@@ -38,6 +38,9 @@ const ProductItem = ({ product, grid, id, name, price, desc, imageURL }) => {
       <div className={styles.content}>
         <div className={styles.details}>
           <p>{`Rs ${price}`}</p>
+
+          <p>{` ${size}`}</p>
+
           <h4>{shortenText(name, 18)}</h4>
         </div>
         {!grid && <p className={styles.desc}>{shortenText(desc, 200)}</p>}
