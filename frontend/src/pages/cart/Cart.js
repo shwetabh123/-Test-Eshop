@@ -92,6 +92,7 @@ export const Cart = () => {
               <th>s/n</th>
               <th>Product</th>
               <th>Price</th>
+              <th>Size</th>
               <th>Quantity</th>
               <th>Total</th>
               <th>Action</th>
@@ -99,7 +100,7 @@ export const Cart = () => {
           </thead>
           <tbody>
           {cartItems.map((cart, index) => {
-                  const { id, name, price, imageURL, cartQuantity } = cart;
+                  const { id, name, price,size, imageURL, cartQuantity } = cart;
                   return (
                     <tr key={id}>
                       <td>{index + 1}</td>
@@ -114,6 +115,8 @@ export const Cart = () => {
                         />
                       </td>
                       <td>{price}</td>
+
+                      <td>{size}</td>
                       <td>
                         <div className={styles.count}>
                           <button className="--btn" onClick={() => decreaseCart(cart)}>  -</button>
@@ -153,7 +156,7 @@ export const Cart = () => {
       <h4>Subtotal:</h4>
       <h3>{`Rs ${cartTotalAmount.toFixed(2)}`}</h3>
     </div>
-    <p>Tax an shipping calculated at checkout</p>
+    <p>Tax and shipping calculated at checkout</p>
     <button
       className="--btn --btn-primary --btn-block"
       onClick={checkout}>
