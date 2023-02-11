@@ -16,10 +16,10 @@ import { useSelector } from "react-redux";
 import { selectProducts } from "../../../redux/slice/productSlice";
 
 const categories = [
-  { id: 1, name: "Laptop" },
-  { id: 2, name: "Electronics" },
-  { id: 3, name: "Fashion" },
-  { id: 4, name: "Phone" },
+  { id: 1, name: "Ladies Kurti" },
+  { id: 2, name: "Designer Saree" },
+  { id: 3, name: "Salwar Suit" },
+  { id: 4, name: "Western Wear" },
 ];
 const initialState = {
   name: "",
