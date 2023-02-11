@@ -26,6 +26,7 @@ const initialState = {
   imageURL: "",
   price: 0,
   category: "",
+  size:"",
   brand: "",
   desc: "",
 };
@@ -106,6 +107,8 @@ const AddProduct = () => {
         imageURL: product.imageURL,
         price: Number(product.price),
         category: product.category,
+        size:product.size,
+
         brand: product.brand,
         desc: product.desc,
         createdAt: Timestamp.now().toDate(),
@@ -139,6 +142,8 @@ const AddProduct = () => {
           imageURL: product.imageURL,
           price: Number(product.price),
           category: product.category,
+          size:product.size,
+
           brand: product.brand,
           desc: product.desc,
           createdAt: productEdit.createdAt,
@@ -225,6 +230,24 @@ const AddProduct = () => {
               })}
             </select>
 
+            <label>Product Size:</label>
+            <select
+              required
+              name="sie"
+              value={product.size}
+              onChange={(e) => handleInputChange(e)}
+            >
+              <option value="" disabled>
+                -- Choose product size --
+              </option>
+              {categories.map((cat) => {
+                return (
+                  <option key={cat.id} value={cat.name}>
+                    {cat.name}
+                  </option>
+                );
+              })}
+            </select>
             
             <label>Product Company/Brand:</label>
             <input
