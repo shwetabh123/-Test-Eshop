@@ -70,13 +70,8 @@ const OrderHistory = () => {
                           {orderAmount}
                         </td>
                         <td>
-                          <p
-                            className={
-                              orderStatus !== "Delivered"
-                                ? `${styles.pending}`
-                                : `${styles.delivered}`
-                            }
-                          >
+                          <p className={ orderStatus !== "Delivered" ? `${styles.pending}`
+                                : `${styles.delivered}` }   >
                             {orderStatus}
                           </p>
                         </td>
