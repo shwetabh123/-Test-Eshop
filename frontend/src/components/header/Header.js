@@ -23,6 +23,7 @@ const logo = (
     <Link to="/">
       <h2>
         e<span>Shop</span>.
+        <div><img src="/images/family.png" /></div> 
       </h2>
     </Link>
   </div>
