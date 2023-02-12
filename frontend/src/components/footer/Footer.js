@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
 
 
 const date = new Date();
@@ -13,6 +13,7 @@ const year = date.getFullYear();
 const activeLink = ({ isActive }) => (isActive ? `${styles.active}` : "");
 
 const Footer = () => {
+
   return( 
  <div className={styles.footer}>
   
