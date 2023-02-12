@@ -11,41 +11,11 @@ import {
 import { selectProducts } from "../../../redux/slice/productSlice";
 
 
-const initialState = {
-  name: "",
-  imageURL: "",
-  price: 0,
-  category: "",
-  size:"",
-  brand: "",
-  desc: "",
-};
-
 
 const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
 
 
-  const [ setProduct] = useState(() => {
-    const newState = detectForm(id, { ...initialState });
-    return newState;
-  });
-
-
-
    
-  function detectForm(id, f1, f2) {
-    if (id === "ADD") {
-      return f1;
-    }
-    return f2;
-  }
-
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setProduct({ ...product, [name]: value });
-
-  };
 
 
 
@@ -80,12 +50,14 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
           <p>{` ${size}`}</p>
 
-          <label>Size:</label>
-          <select
+          <label>Product Size:</label>
+           
+           
+            <select
               required
               name="size"
-              value={size}
-              onChange={(e) => handleInputChange(e)}
+              value={product.size}
+             
             >
               <option value="" disabled>
                 -- Choose product size --
@@ -98,8 +70,6 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
                 );
               })}
             </select>
-
-
 
           <h4>{shortenText(name, 18)}</h4>
         </div>
