@@ -16,14 +16,14 @@ const Footer = () => {
  <div className={styles.footer}>
   
           <div className="item2">
-                    <span style={{ paddingRight: 5 }}>Copyright </span>
+                    <span style={{ paddingRight: 5 }}>Copyright
                    
                     <span style={{ paddingLeft: 5 }}>
                         {new Date().getFullYear()}  All Rights
                         Reserved.
                     </span>
              
-
+               
 
                 <NavLink to="/contact" className={activeLink}>
                   Contact Us
@@ -45,7 +45,7 @@ const Footer = () => {
 
               
                &copy;  {year} All Rights Reserved */}
-              
+               </span>
                </div> 
 
                </div>

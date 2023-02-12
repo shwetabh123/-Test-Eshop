@@ -274,7 +274,7 @@ const AddProduct = () => {
            
            <select
              required
-             name="size"
+             name="deliverytime"
              value={product.deliverytime}
              onChange={(e) => handleInputChange(e)}
            >
