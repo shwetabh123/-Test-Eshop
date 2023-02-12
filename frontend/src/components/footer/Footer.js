@@ -19,29 +19,28 @@ const Footer = () => {
       fontSize: '20px'
   }}>
     <div style={{ margin: '10px' }}>
-    <NavLink to="/cancellationrefund">
+    <NavLink to="/cancellationrefund" className={activeLink} color="green" >
        Cancellation & refund
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/contact" >
+    <NavLink to="/contact" className={activeLink} color="green" >
         Contact
     </NavLink>
 </div>
 
 
 <div style={{ margin: '10px' }}>
-    <NavLink to="/termsofservice" 
-      >
+    <NavLink to="/termsofservice"  color="green">
        Terms of service
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/privacypolicy" >
+    <NavLink to="/privacypolicy"  color= 'greenyellow'  >
       Privacy Policy
     </NavLink>
 </div>
-
+&copy;  {year} All Rights Reserved 
 </div>
 
 );
