@@ -48,6 +48,7 @@ const AddProduct = () => {
 
   const products = useSelector(selectProducts);
   console.log(products);
+  
   const productEdit = products.find((item) => item.id === id);
   console.log(productEdit);
   
