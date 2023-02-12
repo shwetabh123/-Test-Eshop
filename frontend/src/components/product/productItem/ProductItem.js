@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import styles from "./ProductItem.module.scss";
 import { useDispatch } from "react-redux";
 import Card from "../../card/Card";
@@ -9,17 +10,36 @@ import {
 } from "../../../redux/slice/cartSlice";
 import { selectProducts } from "../../../redux/slice/productSlice";
 
-//const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
+
+const initialState = {
+  name: "",
+  imageURL: "",
+  price: 0,
+  category: "",
+  size:"",
+  brand: "",
+  desc: "",
+};
 
 
-  const ProductItem = ({  grid,id, name, price,size, desc, imageURL }) => {
+const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
 
- 
 
   const [ setProduct] = useState(() => {
     const newState = detectForm(id, { ...initialState });
     return newState;
   });
+
+
+
+   
+  function detectForm(id, f1, f2) {
+    if (id === "ADD") {
+      return f1;
+    }
+    return f2;
+  }
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
