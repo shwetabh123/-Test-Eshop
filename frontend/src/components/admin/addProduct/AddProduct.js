@@ -126,7 +126,7 @@ const AddProduct = () => {
         price: Number(product.price),
         category: product.category,
         size:product.size,
-
+        deliverytime:product.deliverytime,
         brand: product.brand,
         desc: product.desc,
         createdAt: Timestamp.now().toDate(),
@@ -161,7 +161,7 @@ const AddProduct = () => {
           price: Number(product.price),
           category: product.category,
           size:product.size,
-
+          deliverytime:product.deliverytime,
           brand: product.brand,
           desc: product.desc,
           createdAt: productEdit.createdAt,
