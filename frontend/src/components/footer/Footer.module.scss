@@ -5,6 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: "flex";
+  background: 'black';
+  padding: '5px 0 5px 5px';
+  position:"fixed";
+
   height: 8rem;
   p {
     color: #fff;

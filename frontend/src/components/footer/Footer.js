@@ -12,14 +12,9 @@ const Footer = () => {
 
   return( 
 
-    <div style={{
-      display: "flex",
-      background: 'black',
-      padding: '5px 0 5px 5px',
-      position:"fixed",
-      fontSize: '20px',
+    <div className={styles.footer} >
+   
      
-  }}>
     <div style={{ margin: '10px' }}>
     <NavLink to="/cancellationrefund" className={activeLink} style={{color:"green"}} >
        Cancellation & refund
