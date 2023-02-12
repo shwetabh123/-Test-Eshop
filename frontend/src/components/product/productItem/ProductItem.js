@@ -12,7 +12,7 @@ import { selectProducts } from "../../../redux/slice/productSlice";
 
 
 
-const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
+const ProductItem = ({ product, grid, id, name, price,size,deliverytime, desc, imageURL }) => {
 
 
    
@@ -46,8 +46,8 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
           <p>{`Rs ${price}`}</p>
 
           <p>{` ${size}`}</p>
-
-          <p>Delivery in 5-6 Days</p>
+          <p>{` ${deliverytime}`}</p>
+         
 
           <h4>{shortenText(name, 18)}</h4>
         </div>

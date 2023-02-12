@@ -30,6 +30,13 @@ const size = [
   { id: 4, name: "XXL" }
 ];
 
+const deliverytime = [
+  { id: 1, name: "5-6" },
+  { id: 2, name: "6-7" },
+  { id: 3, name: "7-14" },
+
+];
+
 const initialState = {
   name: "",
   imageURL: "",
@@ -261,6 +268,27 @@ const AddProduct = () => {
               })}
             </select>
 
+
+            <label>Delivery Time :</label>
+           
+           
+           <select
+             required
+             name="size"
+             value={product.deliverytime}
+             onChange={(e) => handleInputChange(e)}
+           >
+             <option value="" disabled>
+               -- Choose Delivery Time  --
+             </option>
+             {sdeliverytimeize.map((cat) => {
+               return (
+                 <option key={cat.id} value={cat.name}>
+                   {cat.name}
+                 </option>
+               );
+             })}
+           </select>
        
             
             <label>Product Company/Brand:</label>
