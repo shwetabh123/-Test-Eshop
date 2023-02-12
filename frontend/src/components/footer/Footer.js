@@ -22,77 +22,26 @@ const Footer = () => {
 
   return( 
 
-    <Box>
-    <h1 style={{ color: "green", 
-                 textAlign: "center", 
-                 marginTop: "-50px" }}>
-      www.onlinedmart.com
-    </h1>
-    <Container>
-      <Row>
-       
-        <Column>
-          <Heading>Contact Us</Heading>
-          <NavLink to="/contact" className={activeLink}>
-                 Contact Us
-                 </NavLink>
-      
-        </Column>
-        <Column>
-          <Heading> Cancellation & refund</Heading>
-          <FooterLink href="/cancellationrefund"> Cancellation & refund</FooterLink>
-   
-        </Column>
-        <Column>
-          <Heading> Terms of service</Heading>
-          <FooterLink href="/termsofservice"> Terms of service</FooterLink>
-   
-        </Column>
+    <div style={{
+      display: "flex",
+      background: 'black',
+      padding: '5px 0 5px 5px',
+      fontSize: '20px'
+  }}>
+    <div style={{ margin: '10px' }}>
+    <NavLink to="/cancellationrefund" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+       Cancellation & refund
+    </NavLink>
+</div>
+<div style={{ margin: '10px' }}>
+    <NavLink to="/contact" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+        Contact
+    </NavLink>
+</div>
+</div>
 
-        <Column>
-          <Heading>Privacy Policy</Heading>
-          <FooterLink href="/privacypolicy"> Privacy Policy</FooterLink>
-   
-        </Column>
-        <Column>
-          <Heading>Social Media</Heading>
-          <FooterLink href="#">
-            <i className="fab fa-facebook-f">
-              <span style={{ marginLeft: "10px" }}>
-                Facebook
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="#">
-            <i className="fab fa-instagram">
-              <span style={{ marginLeft: "10px" }}>
-                Instagram
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="#">
-            <i className="fab fa-twitter">
-              <span style={{ marginLeft: "10px" }}>
-                Twitter
-              </span>
-            </i>
-          </FooterLink>
-          <FooterLink href="#">
-            <i className="fab fa-youtube">
-              <span style={{ marginLeft: "10px" }}>
-                Youtube
-              </span>
-            </i>
-          </FooterLink>
-
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} All rights reserved |
-          
-          </p>
-        </Column>
-      </Row>
-    </Container>
-  </Box>
 );
 };
 
