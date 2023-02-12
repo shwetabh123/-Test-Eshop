@@ -19,28 +19,25 @@ const Footer = () => {
       fontSize: '20px'
   }}>
     <div style={{ margin: '10px' }}>
-    <NavLink to="/cancellationrefund" style={({ isActive }) => ({ 
-        color: isActive ? 'greenyellow' : 'white' })}>
+    <NavLink to="/cancellationrefund">
        Cancellation & refund
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/contact" style={({ isActive }) => ({ 
-        color: isActive ? 'greenyellow' : 'white' })}>
+    <NavLink to="/contact" >
         Contact
     </NavLink>
 </div>
 
 
 <div style={{ margin: '10px' }}>
-    <NavLink to="/termsofservice" style={({ isActive }) => ({ 
-        color: isActive ? 'greenyellow' : 'white' })}>
+    <NavLink to="/termsofservice" 
+      >
        Terms of service
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/privacypolicy" style={({ isActive }) => ({ 
-        color: isActive ? 'greenyellow' : 'white' })}>
+    <NavLink to="/privacypolicy" >
       Privacy Policy
     </NavLink>
 </div>
