@@ -18,27 +18,27 @@ const Footer = () => {
       padding: '5px 0 5px 5px',
       position:"fixed",
       fontSize: '20px',
-      color:"white"
+     
   }}>
     <div style={{ margin: '10px' }}>
-    <NavLink to="/cancellationrefund" className={activeLink} color="green" >
+    <NavLink to="/cancellationrefund" className={activeLink} style={{color:"green"}} >
        Cancellation & refund
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/contact" className={activeLink} color="green" >
+    <NavLink to="/contact" className={activeLink} style={{color:"green"}} >
         Contact
     </NavLink>
 </div>
 
 
 <div style={{ margin: '10px' }}>
-    <NavLink to="/termsofservice"  color="green">
+    <NavLink to="/termsofservice" style={{color:"green"}}>
        Terms of service
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/privacypolicy"  color= 'greenyellow'  >
+    <NavLink to="/privacypolicy"  style={{color:"green"}} >
       Privacy Policy
     </NavLink>
 </div>
