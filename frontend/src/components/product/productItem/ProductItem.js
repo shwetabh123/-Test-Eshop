@@ -7,8 +7,26 @@ import {
   ADD_TO_CART,
   CALCULATE_TOTAL_QUANTITY,
 } from "../../../redux/slice/cartSlice";
+import { selectProducts } from "../../../redux/slice/productSlice";
 
 const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
+
+  
+  const { id } = useParams();
+  const products = useSelector(selectProducts);
+
+  const [product, setProduct] = useState(() => {
+    const newState = detectForm(id, { ...initialState }, productEdit);
+    return newState;
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setProduct({ ...product, [name]: value });
+
+  };
+
+
 
   const dispatch = useDispatch();
 
