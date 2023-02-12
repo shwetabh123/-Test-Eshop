@@ -3,8 +3,6 @@ import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
-
 
 const date = new Date();
 const year = date.getFullYear();
@@ -19,9 +17,9 @@ const Footer = () => {
   
           <div className="item2">
                     <span style={{ paddingRight: 5 }}>Copyright </span>
-                    <FontAwesomeIcon icon={faCopyright} />{" "}
+                   
                     <span style={{ paddingLeft: 5 }}>
-                        {new Date().getFullYear()} YourCompany. All Rights
+                        {new Date().getFullYear()}  All Rights
                         Reserved.
                     </span>
              
