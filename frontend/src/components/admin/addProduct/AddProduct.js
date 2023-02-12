@@ -281,7 +281,7 @@ const AddProduct = () => {
              <option value="" disabled>
                -- Choose Delivery Time  --
              </option>
-             {sdeliverytimeize.map((cat) => {
+             {deliverytime.map((cat) => {
                return (
                  <option key={cat.id} value={cat.name}>
                    {cat.name}
