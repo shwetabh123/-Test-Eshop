@@ -109,9 +109,11 @@ const Header = () => {
   return (
    
       <header  className={scrollPage ? `${styles.fixed}` : null}>
+
+   
         <div className={styles.header}>
           {logo}
-          <div><img src="/images/family.jpeg" /></div> 
+          <img src="/images/family.jpeg" />
           <nav>
             <ul >
               <li className={styles["logo-mobile"]}>
