@@ -46,7 +46,7 @@ const ProductItem = ({ product, grid, id, name, price,size,deliverytime, desc, i
           <p>{`Rs ${price}`}</p>
 
           <p>{` ${size}`}</p>
-          <p>{` ${deliverytime}`}</p>
+          <p>Delivery Time : {` ${deliverytime}`}</p>
          
 
           <h4>{shortenText(name, 18)}</h4>

@@ -3,6 +3,14 @@ import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
+import {
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Heading,
+} from "./FooterStyles";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -14,42 +22,79 @@ const Footer = () => {
 
   return( 
 
-  
-  <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          {/* Column1 */}
-          <div className="col">
-           
-          </div>
-          {/* Column2 */}
-          <div className="col">
-           
-          
-          </div>
-          {/* Column3 */}
-          <div className="col">
-           
-            <ul className="list-unstyled">
-              <li>
-                <NavLink to="/contact" className={activeLink}>
-                  Contact Us
-                 </NavLink>
-                 </li>
-             
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <div className="row">
+    <Box>
+    <h1 style={{ color: "green", 
+                 textAlign: "center", 
+                 marginTop: "-50px" }}>
+      www.onlinedmart.com
+    </h1>
+    <Container>
+      <Row>
+       
+        <Column>
+          <Heading>Contact Us</Heading>
+          <FooterLink href="/contact">Contact Us</FooterLink>
+      
+        </Column>
+        <Column>
+          <Heading> Cancellation & refund</Heading>
+          <FooterLink href="/cancellationrefund"> Cancellation & refund</FooterLink>
+   
+        </Column>
+        <Column>
+          <Heading> Terms of service</Heading>
+          <FooterLink href="/termsofservice"> Terms of service</FooterLink>
+   
+        </Column>
+
+        <Column>
+          <Heading>Privacy Policy</Heading>
+          <FooterLink href="/privacypolicy"> Privacy Policy</FooterLink>
+   
+        </Column>
+        <Column>
+          <Heading>Social Media</Heading>
+          <FooterLink href="#">
+            <i className="fab fa-facebook-f">
+              <span style={{ marginLeft: "10px" }}>
+                Facebook
+              </span>
+            </i>
+          </FooterLink>
+          <FooterLink href="#">
+            <i className="fab fa-instagram">
+              <span style={{ marginLeft: "10px" }}>
+                Instagram
+              </span>
+            </i>
+          </FooterLink>
+          <FooterLink href="#">
+            <i className="fab fa-twitter">
+              <span style={{ marginLeft: "10px" }}>
+                Twitter
+              </span>
+            </i>
+          </FooterLink>
+          <FooterLink href="#">
+            <i className="fab fa-youtube">
+              <span style={{ marginLeft: "10px" }}>
+                Youtube
+              </span>
+            </i>
+          </FooterLink>
+
           <p className="col-sm">
             &copy;{new Date().getFullYear()} All rights reserved |
           
           </p>
-        </div>
-      </div>
-    </div>
-  );
+        </Column>
+      </Row>
+    </Container>
+  </Box>
+);
+};
+
+
    
 
               //   <NavLink to="/contact" className={activeLink}>
@@ -76,6 +121,6 @@ const Footer = () => {
                
 
 
-  }
+  
 
 export default Footer;
