@@ -23,7 +23,7 @@ const logo = (
     <Link to="/">
       <h2>
         e<span>Shop</span>.
-        <div><img src="/images/family.png" /></div> 
+        
       </h2>
     </Link>
   </div>
@@ -111,7 +111,7 @@ const Header = () => {
       <header  className={scrollPage ? `${styles.fixed}` : null}>
         <div className={styles.header}>
           {logo}
-
+          <div><img src="/images/family.png" /></div> 
           <nav>
             <ul >
               <li className={styles["logo-mobile"]}>
