@@ -1,16 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from "./FooterStyles";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -40,6 +30,21 @@ const Footer = () => {
         Contact
     </NavLink>
 </div>
+
+
+<div style={{ margin: '10px' }}>
+    <NavLink to="/termsofservice" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+       Terms of service
+    </NavLink>
+</div>
+<div style={{ margin: '10px' }}>
+    <NavLink to="/privacypolicy" style={({ isActive }) => ({ 
+        color: isActive ? 'greenyellow' : 'white' })}>
+      Privacy Policy
+    </NavLink>
+</div>
+
 </div>
 
 );
