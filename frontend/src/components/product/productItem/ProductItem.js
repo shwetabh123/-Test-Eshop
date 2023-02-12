@@ -47,7 +47,7 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
           <p>{` ${size}`}</p>
 
-       
+          <p>Delivery in 5-6 Days</p>
 
           <h4>{shortenText(name, 18)}</h4>
         </div>
