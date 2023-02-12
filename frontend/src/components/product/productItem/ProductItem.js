@@ -11,13 +11,12 @@ import { selectProducts } from "../../../redux/slice/productSlice";
 
 //const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) => {
 
+
+  const ProductItem = ({  grid,id, name, price,size, desc, imageURL }) => {
+
  
-const ProductItem = ({  grid, id, name, price,size, desc, imageURL }) => {
 
-  const { id } = useParams();
-
-
-  const [product, setProduct] = useState(() => {
+  const [ setProduct] = useState(() => {
     const newState = detectForm(id, { ...initialState });
     return newState;
   });
