@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import PrivacyModal from "../ModalView/PrivacyModal";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
