@@ -131,7 +131,8 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-              <li>
+
+              {/* <li>
                 <NavLink to="/contact" className={activeLink}>
                   Contact Us
                 </NavLink>
@@ -150,8 +151,12 @@ const Header = () => {
                 <NavLink to="/privacypolicy" className={activeLink}>
                 Privacy Policy
                 </NavLink>
-              </li>
+              </li> */}
+
+
             </ul>
+
+
           <div className={styles["header-right"]}>
 
           <span className={styles.links}>
@@ -163,7 +168,9 @@ const Header = () => {
           Hi, {displayName}
           </a>
           <NavLink to ="/register" className={activeLink}>Register</NavLink>
+
           <NavLink to ="/order-history" className={activeLink}>My Orders</NavLink>
+
           <NavLink to ="/" onClick={logoutUser}>Logout</NavLink>
 
           </span>
