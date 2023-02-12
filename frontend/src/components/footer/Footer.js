@@ -4,20 +4,8 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faYoutube,
-  faGithub,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+
+
 const date = new Date();
 const year = date.getFullYear();
 
