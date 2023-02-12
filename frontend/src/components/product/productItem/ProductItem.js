@@ -16,9 +16,6 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
 
    
-
-
-
   const dispatch = useDispatch();
 
   const shortenText = (text, n) => {
@@ -50,26 +47,7 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
           <p>{` ${size}`}</p>
 
-          <label>Product Size:</label>
-           
-           
-            <select
-              required
-              name="size"
-              value={product.size}
-             
-            >
-              <option value="" disabled>
-                -- Choose product size --
-              </option>
-              {size.map((cat) => {
-                return (
-                  <option key={cat.id} value={cat.name}>
-                    {cat.name}
-                  </option>
-                );
-              })}
-            </select>
+       
 
           <h4>{shortenText(name, 18)}</h4>
         </div>
