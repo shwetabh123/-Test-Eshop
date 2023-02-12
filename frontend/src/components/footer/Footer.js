@@ -16,7 +16,9 @@ const Footer = () => {
       display: "flex",
       background: 'black',
       padding: '5px 0 5px 5px',
-      fontSize: '20px'
+      position:"fixed",
+      fontSize: '20px',
+      color:"white"
   }}>
     <div style={{ margin: '10px' }}>
     <NavLink to="/cancellationrefund" className={activeLink} color="green" >
