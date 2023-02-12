@@ -33,7 +33,9 @@ const Footer = () => {
        
         <Column>
           <Heading>Contact Us</Heading>
-          <FooterLink href="/contact">Contact Us</FooterLink>
+          <NavLink to="/contact" className={activeLink}>
+                 Contact Us
+                 </NavLink>
       
         </Column>
         <Column>
