@@ -23,7 +23,12 @@ const Footer = () => {
                         Reserved.
                     </span>
              
-               
+                    <div style={{ margin: '10px' }}>
+                        <NavLink to="/contact" style={({ isActive }) => ({ 
+                            color: isActive ? 'greenyellow' : 'white' })}>
+                            Contact Us
+                        </NavLink>
+                    </div>
 
                 <NavLink to="/contact" className={activeLink}>
                   Contact Us

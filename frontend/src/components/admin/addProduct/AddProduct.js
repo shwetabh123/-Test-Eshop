@@ -43,6 +43,7 @@ const initialState = {
   price: 0,
   category: "",
   size:"",
+  deliverytime:"",
   brand: "",
   desc: "",
 };

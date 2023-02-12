@@ -187,12 +187,14 @@ const filteredProducts = useSelector(selectFilteredProducts);
                 <th>Name</th>
                 <th>Category</th>
                 <th>Price</th>
+                <th>Size</th>
+                <th>Delivery Time</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               {currentProducts.map((product, index) => {
-                const { id, name, price, imageURL, category } = product;
+                const { id, name, price,size,deliverytime, imageURL, category } = product;
                 return (
                   <tr key={id}>
                     <td>{index + 1}</td>
@@ -206,6 +208,8 @@ const filteredProducts = useSelector(selectFilteredProducts);
                     <td>{name}</td>
                     <td>{category}</td>
                     <td>{`$${price}`}</td>
+                    <td>{size}</td>
+                    <td>{deliverytime}</td>
                     <td className={styles.icons}>
                       <Link to={`/admin/add-product/${id}`}>
                         <FaEdit size={20} color="green" />
