@@ -260,7 +260,7 @@ const AddProduct = () => {
               })}
             </select>
 
-            <ul >
+            <ul  className="_1q8vHb" >
 
             <li className="_3V2wfe _31hAvz" id="swatch-0-size">
                 <a className="_1fGeJ5 _2UVyXR _31hAvz" href="/mast-harbour-printed-men-round-neck-yellow-t-shirt/p/itma32b4b7739d93?pid=TSHGMMA5MCZHXATC&lid=LSTTSHGMMA5MCZHXATCG8C0LY&marketplace=FLIPKART&sattr[]=size&st=size">S
