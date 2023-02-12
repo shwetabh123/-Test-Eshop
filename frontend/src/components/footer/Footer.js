@@ -1,6 +1,14 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import PrivacyModal from "../ModalView/PrivacyModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faGithub,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   MDBFooter,
   MDBContainer,
@@ -18,81 +26,18 @@ const activeLink = ({ isActive }) => (isActive ? `${styles.active}` : "");
 
 const Footer = () => {
   return( 
-
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
-    <MDBContainer className='p-4'>
-      <section className='mb-4'>
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='facebook-f' />
-        </MDBBtn>
-
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='twitter' />
-        </MDBBtn>
-
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='google' />
-        </MDBBtn>
-
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='instagram' />
-        </MDBBtn>
-
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='linkedin-in' />
-        </MDBBtn>
-
-        <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-          <MDBIcon fab icon='github' />
-        </MDBBtn>
-      </section>
-
-
-      <section className=''>
-        <MDBRow>
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Links</h5>
-
-            <ul className='list-unstyled mb-0'>
-            <li>
-                <NavLink to="/contact" className={activeLink}>
-                  Contact Us
-                 </NavLink>
-              </li>
-              <li>
-               <NavLink to="/cancellationrefund" className={activeLink}>
-                 Cancellation & refund
-                 </NavLink>
-               </li>
-               <li>
-                <NavLink to="/termsofservice" className={activeLink}>
-                 Terms of service
-                 </NavLink>
-               </li>
-               <li>
-                 <NavLink to="/privacypolicy" className={activeLink}>
-                 Privacy Policy
-                 </NavLink>
-               </li>
-            </ul>
-          </MDBCol>
-
-        </MDBRow>
-      </section>
-    </MDBContainer>
-
-    <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-    &copy;  {year} All Rights Reserved   
-      <a className='text-white' href='https://mdbootstrap.com/'>
-        MDBootstrap.com
-      </a>
-    </div>
-    </MDBFooter>
-);
-}
-   {/* <div className={styles.footer}>
+ <div className={styles.footer}>
   
-  
+  <div className="item2">
+                    <span style={{ paddingRight: 5 }}>Copyright </span>
+                    <FontAwesomeIcon icon={faCopyright} />{" "}
+                    <span style={{ paddingLeft: 5 }}>
+                        {new Date().getFullYear()} YourCompany. All Rights
+                        Reserved.
+                    </span>
+                </div>
+
+
          <nav>
             <ul >
             <li>
@@ -117,14 +62,15 @@ const Footer = () => {
                </li>
            
                </ul>
-            
+{/*             
 
               
-               &copy;  {year} All Rights Reserved
+               &copy;  {year} All Rights Reserved */}
               
                </nav>
-               </div> */}
+               </div> 
+  );
    
-
+  }
 
 export default Footer;

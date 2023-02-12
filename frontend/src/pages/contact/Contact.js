@@ -5,6 +5,11 @@ import { FaPhoneAlt, FaEnvelope, FaTwitter,FaLinkedinIn } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import {
+  faYoutube,
+  faGithub,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const form = useRef();
@@ -85,6 +90,15 @@ const Contact = () => {
                 <span>
                   <FaLinkedinIn/>
                   <p>shwetabh-srivastava-529a3826</p>
+                </span>
+                <span>
+                <FontAwesomeIcon icon={faFacebook} />
+                </span>
+                <span>
+                <FontAwesomeIcon icon={faYoutube} />
+                </span>
+                <span>
+                <FontAwesomeIcon icon={faGithub} />
                 </span>
               </div>
             </Card>
