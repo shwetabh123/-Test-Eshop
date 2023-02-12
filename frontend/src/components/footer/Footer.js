@@ -13,7 +13,7 @@ const Footer = () => {
   <div className={styles.footer}>
   
   
-  <nav>
+        <nav>
             <ul >
             <li>
                 <NavLink to="/contact" className={activeLink}>
