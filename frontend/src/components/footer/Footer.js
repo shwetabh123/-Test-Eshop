@@ -28,14 +28,14 @@ const Footer = () => {
   return( 
  <div className={styles.footer}>
   
-  <div className="item2">
+          <div className="item2">
                     <span style={{ paddingRight: 5 }}>Copyright </span>
                     <FontAwesomeIcon icon={faCopyright} />{" "}
                     <span style={{ paddingLeft: 5 }}>
                         {new Date().getFullYear()} YourCompany. All Rights
                         Reserved.
                     </span>
-                </div>
+             
 
 
          <nav>
@@ -69,6 +69,8 @@ const Footer = () => {
               
                </nav>
                </div> 
+
+               </div>
   );
    
   }
