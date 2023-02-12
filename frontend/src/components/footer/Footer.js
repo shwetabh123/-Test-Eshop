@@ -37,10 +37,13 @@ const Footer = () => {
               </li>
            
               </ul>
-              </nav>
+            
 
               
-              &copy;  {year} All Rights Reserved</div>
+              &copy;  {year} All Rights Reserved
+              
+              </nav>
+              </div>
   );
 };
 

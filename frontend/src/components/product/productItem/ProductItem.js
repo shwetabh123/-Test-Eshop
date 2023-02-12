@@ -41,28 +41,24 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
           <p>{` ${size}`}</p>
 
+          <select
+              required
+              name="size"
+              value={size}
+              onChange={(e) => handleInputChange(e)}
+            >
+              <option value="" disabled>
+                -- Choose product size --
+              </option>
+              {size.map((cat) => {
+                return (
+                  <option key={cat.id} value={cat.name}>
+                    {cat.name}
+                  </option>
+                );
+              })}
+            </select>
 
-
-          <ul  className="_1q8vHb" >
-
-<li className="_3V2wfe _31hAvz" id="swatch-0-size">
-    <a className="_1fGeJ5 _2UVyXR _31hAvz" href="/mast-harbour-printed-men-round-neck-yellow-t-shirt/p/itma32b4b7739d93?pid=TSHGMMA5MCZHXATC&lid=LSTTSHGMMA5MCZHXATCG8C0LY&marketplace=FLIPKART&sattr[]=size&st=size">S
-    </a>
-  </li>
-  <li className="_3V2wfe _31hAvz" id="swatch-1-size">
-    <a className="_1fGeJ5 _2UVyXR _31hAvz" href="/mast-harbour-printed-men-round-neck-yellow-t-shirt/p/itma32b4b7739d93?pid=TSHGMMA5MCZHXATC&lid=LSTTSHGMMA5MCZHXATCG8C0LY&marketplace=FLIPKART&sattr[]=size&st=size">M
-    </a>
-  </li>
-  <li className="_3V2wfe _31hAvz" id="swatch-2-size">
-    <a className="_1fGeJ5 _2UVyXR _31hAvz" href="/mast-harbour-printed-men-round-neck-yellow-t-shirt/p/itma32b4b7739d93?pid=TSHGMMA5MCZHXATC&lid=LSTTSHGMMA5MCZHXATCG8C0LY&marketplace=FLIPKART&sattr[]=size&st=size">L
-    </a>
-  </li>
-  <li className="_3V2wfe _31hAvz" id="swatch-3-size">
-    <a className="_1fGeJ5 _2UVyXR _31hAvz" href="/mast-harbour-printed-men-round-neck-yellow-t-shirt/p/itma32b4b7739d93?pid=TSHGMMA5MCZHXATC&lid=LSTTSHGMMA5MCZHXATCG8C0LY&marketplace=FLIPKART&sattr[]=size&st=size">XL
-    </a>
-  </li>
-
-  </ul >
 
 
           <h4>{shortenText(name, 18)}</h4>
