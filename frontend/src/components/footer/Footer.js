@@ -10,7 +10,7 @@ const activeLink = ({ isActive }) => (isActive ? `${styles.active}` : "");
 
 const Footer = () => {
   return( 
-  <div className={styles.footer}>&copy;
+  <div className={styles.footer}>
   
   
   <nav>
@@ -40,7 +40,7 @@ const Footer = () => {
               </nav>
 
               
-   {year} All Rights Reserved</div>
+              &copy;  {year} All Rights Reserved</div>
   );
 };
 
