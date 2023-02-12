@@ -22,7 +22,7 @@ const logo = (
   <div className={styles.logo}>
     <Link to="/">
       <h2>
-        e<span>Shop</span>.
+        Online<span>Dmart</span>.
         
       </h2>
     </Link>
@@ -113,8 +113,10 @@ const Header = () => {
    
         <div className={styles.header}>
           {logo}
-         <div> <img src="./images/family.jpg" alt="Girl in a jacket" width="500" height="600"/></div>
+
+       
           <nav>
+          <div> <img src="./images/family.jpg" alt="Girl in a jacket" width="500" height="600"/></div>
             <ul >
               <li className={styles["logo-mobile"]}>
                 {logo}
