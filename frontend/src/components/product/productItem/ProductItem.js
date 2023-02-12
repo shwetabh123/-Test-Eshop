@@ -13,7 +13,7 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
   
   const { id } = useParams();
-  const products = useSelector(selectProducts);
+
 
   const [product, setProduct] = useState(() => {
     const newState = detectForm(id, { ...initialState }, productEdit);
