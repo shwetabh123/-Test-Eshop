@@ -44,7 +44,7 @@ const ProductItem = ({ product, grid, id, name, price,size,deliverytime, desc, i
       <div className={styles.content}>
         <div className={styles.details}>
           <p>{`Rs ${price}`}</p>
-
+          <p>Sales 30% Off </p>
           <p>{` ${size}`}</p>
           <p>Delivery Time : {` ${deliverytime}`}</p>
          
