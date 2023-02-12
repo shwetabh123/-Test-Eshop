@@ -113,7 +113,7 @@ const Header = () => {
    
         <div className={styles.header}>
           {logo}
-         <div> <img src="/images/family.jpg" alt="Girl in a jacket" width="500" height="600"/></div>
+         <div> <img src="./images/family.jpg" alt="Girl in a jacket" width="500" height="600"/></div>
           <nav>
             <ul >
               <li className={styles["logo-mobile"]}>
