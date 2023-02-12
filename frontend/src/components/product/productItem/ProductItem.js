@@ -80,6 +80,7 @@ const ProductItem = ({ product, grid, id, name, price,size, desc, imageURL }) =>
 
           <p>{` ${size}`}</p>
 
+          <label>Size:</label>
           <select
               required
               name="size"
