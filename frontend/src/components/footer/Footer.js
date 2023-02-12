@@ -16,12 +16,12 @@ const Footer = () => {
    
      
     <div style={{ margin: '10px' }}>
-    <NavLink to="/cancellationrefund" className={activeLink} style={{color:"green"}} >
+    <NavLink to="/cancellationrefund"  style={{color:"green"}} >
        Cancellation & refund
     </NavLink>
 </div>
 <div style={{ margin: '10px' }}>
-    <NavLink to="/contact" className={activeLink} style={{color:"green"}} >
+    <NavLink to="/contact"  style={{color:"green"}} >
         Contact
     </NavLink>
 </div>
