@@ -41,6 +41,7 @@ const CheckoutSummary = () => {
               <h3>Rs {cartTotalAmount.toFixed(2)}</h3>
             </div>
             {cartItems.map((item, index) => {
+              
               const { id, name, price, cartQuantity } = item;
               return (
                 <Card key={id} cardClass={styles.card}>

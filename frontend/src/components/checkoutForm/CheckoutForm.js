@@ -165,7 +165,7 @@ const CheckoutForm = () => {
 
           <div className="App">
       <GooglePayButton
-        environment="TEST"
+        environment="production"
         paymentRequest={{
           apiVersion: 2,
           apiVersionMinor: 0,
@@ -192,9 +192,9 @@ const CheckoutForm = () => {
           transactionInfo: {
             totalPriceStatus: "FINAL",
             totalPriceLabel: "Total",
-            totalPrice: "1",
-            currencyCode: "USD",
-            countryCode: "US",
+            totalPrice:cartTotalAmount ,
+            currencyCode: "inr",
+            countryCode: "IN",
           },
           shippingAddressRequired: true,
           callbackIntents: ["PAYMENT_AUTHORIZATION"],
