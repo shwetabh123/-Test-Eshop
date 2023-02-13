@@ -47,7 +47,7 @@ const CheckoutSummary = () => {
                   <h4>Product: {name}</h4>
                   <p>Quantity: {cartQuantity}</p>
                   <p>Unit price: {price}</p>
-                  <p>Set price: {price * cartQuantity}</p>
+                  <p>Sel price: {price * cartQuantity}</p>
                 </Card>
               );
             })}

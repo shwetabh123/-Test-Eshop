@@ -20,6 +20,8 @@ import { selectShippingAddress } from "../../redux/slice/checkoutSlice";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useNavigate } from "react-router-dom";
+import  GooglePayButton  from "google-pay/button-react";
+
 
 const CheckoutForm = () => {
   const [message, setMessage] = useState(null);
@@ -122,12 +124,15 @@ const CheckoutForm = () => {
     <section>
       <div className={`container ${styles.checkout}`}>
         <h2>Checkout</h2>
+       
         <form onSubmit={handleSubmit}>
           <div>
             <Card cardClass={styles.card}>
               <CheckoutSummary />
             </Card>
           </div>
+
+
           <div>
             <Card cardClass={`${styles.card} ${styles.pay}`}>
               <h3>Stripe Checkout</h3>
@@ -135,8 +140,9 @@ const CheckoutForm = () => {
               <button
                 disabled={isLoading || !stripe || !elements}
                 id="submit"
-                className={styles.button}
-              >
+                className={styles.button} >
+
+
                 <span id="button-text">
                   {isLoading ? (
                     <img
@@ -145,12 +151,69 @@ const CheckoutForm = () => {
                       style={{ width: "20px" }}
                     />
                   ) : ( "Pay now" )}
+
                 </span>
               </button>
               {/* Show any error or success messages */}
               {message && <div id={styles["payment-message"]}>{message}</div>}
             </Card>
           </div>
+
+
+
+
+
+          <div className="App">
+      <GooglePayButton
+        environment="TEST"
+        paymentRequest={{
+          apiVersion: 2,
+          apiVersionMinor: 0,
+          allowedPaymentMethods: [
+            {
+              type: "CARD",
+              parameters: {
+                allowedAuthMethods: ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+                allowedCardNetworks: ["MASTERCARD", "VISA"],
+              },
+              tokenizationSpecification: {
+                type: "PAYMENT_GATEWAY",
+                parameters: {
+                  gateway: "example",
+                  gatewayMerchantId: "exampleGatewayMerchantId",
+                },
+              },
+            },
+          ],
+          merchantInfo: {
+            merchantId: "12345678901234567890",
+            merchantName: "Demo Merchant",
+          },
+          transactionInfo: {
+            totalPriceStatus: "FINAL",
+            totalPriceLabel: "Total",
+            totalPrice: "1",
+            currencyCode: "USD",
+            countryCode: "US",
+          },
+          shippingAddressRequired: true,
+          callbackIntents: ["PAYMENT_AUTHORIZATION"],
+        }}
+        onLoadPaymentData={(paymentRequest) => {
+          console.log(paymentRequest);
+        }}
+        onPaymentAuthorized={paymentData =>{
+          console.log('paymentData ' + paymentData);
+          return { transactionState: 'SUCCESS'}
+        }}
+        existingPaymentMethodRequired='false'
+        buttonColor="black"
+        buttonType="buy"
+      ></GooglePayButton>
+    </div>
+
+
+
         </form>
       </div>
     </section>
