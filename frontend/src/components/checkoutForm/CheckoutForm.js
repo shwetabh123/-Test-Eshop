@@ -133,7 +133,7 @@ const CheckoutForm = () => {
           </div>
 
 
-          <div>
+          {/* <div>
             <Card cardClass={`${styles.card} ${styles.pay}`}>
               <h3>Stripe Checkout</h3>
               <PaymentElement id={styles["payment-element"]} />
@@ -155,10 +155,10 @@ const CheckoutForm = () => {
                 </span>
               </button>
               {/* Show any error or success messages */}
-              {message && <div id={styles["payment-message"]}>{message}</div>}
+            {/* {message && <div id={styles["payment-message"]}>{message}</div>}
             </Card>
-          </div>
-
+          </div> */}
+ 
 
 
 
