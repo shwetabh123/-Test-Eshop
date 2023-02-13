@@ -193,7 +193,7 @@ const CheckoutForm = () => {
             totalPriceStatus: "FINAL",
             totalPriceLabel: "Total",
             totalPrice:  "566" ,
-            currencyCode: "inr",
+            currencyCode: "INR",
             countryCode: "IN",
           },
           shippingAddressRequired: true,
