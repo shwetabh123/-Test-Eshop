@@ -192,7 +192,7 @@ const CheckoutForm = () => {
           transactionInfo: {
             totalPriceStatus: "FINAL",
             totalPriceLabel: "Total",
-            totalPrice: price * cartQuantity ,
+            totalPrice:  "566" ,
             currencyCode: "inr",
             countryCode: "IN",
           },
