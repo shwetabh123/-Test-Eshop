@@ -165,7 +165,7 @@ const CheckoutForm = () => {
 
           <div className="App">
       <GooglePayButton
-        environment="PRODUCTION"
+        environment="TEST"
         paymentRequest={{
           apiVersion: 2,
           apiVersionMinor: 0,
