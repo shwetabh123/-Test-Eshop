@@ -20,7 +20,7 @@ import { selectShippingAddress } from "../../redux/slice/checkoutSlice";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useNavigate } from "react-router-dom";
-import  GooglePayButton  from "google-pay/button-react";
+import GooglePayButton from "@google-pay/button-react";
 
 
 const CheckoutForm = () => {
