@@ -116,7 +116,7 @@ const Header = () => {
 
        
           <nav>
-          <div> <img src="./images/family.jpg" alt="Girl in a jacket" width="500" height="600"/></div>
+         
             <ul >
               <li className={styles["logo-mobile"]}>
                 {logo}
