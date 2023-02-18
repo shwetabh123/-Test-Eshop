@@ -21,6 +21,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Cancellationrefund from './pages/cancellationrefund/Cancellationrefund';
 import Termsofservice from './pages/termsofservice/Termsofservice';
 import Privacypolicy from './pages/privacypolicy/Privacypolicy';
+import aboutus from './pages/aboutus/aboutus';
 
 // import AdminOnlyRoute from "./components/adminOnlyRoute/AdminOnlyRoute";
 // import ProductDetails from "./components/product/productDetails/ProductDetails";
@@ -41,6 +42,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<aboutus/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/cancellationrefund" element={<Cancellationrefund/>} />
         <Route path="/termsofservice" element={<Termsofservice/>} />
