@@ -21,7 +21,9 @@ import NotFound from "./pages/notFound/NotFound";
 import Cancellationrefund from './pages/cancellationrefund/Cancellationrefund';
 import Termsofservice from './pages/termsofservice/Termsofservice';
 import Privacypolicy from './pages/privacypolicy/Privacypolicy';
-import Aboutus from './pages/aboutus/Aboutus';
+import Aboutus from './pages/aboutus/aboutus';
+
+
 
 // import AdminOnlyRoute from "./components/adminOnlyRoute/AdminOnlyRoute";
 // import ProductDetails from "./components/product/productDetails/ProductDetails";
