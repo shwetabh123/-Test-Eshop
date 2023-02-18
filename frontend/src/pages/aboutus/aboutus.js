@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from "../../components/card/Card";
-import styles from "./aboutus.module.scss";
+import styles from "./Aboutus.module.scss";
 
 
-const aboutus = () => {
+const Aboutus = () => {
   return (
     <section>
     <div className={`container ${styles.contact}`}>
@@ -43,4 +43,4 @@ const aboutus = () => {
 );
 }
 
-export default aboutus
+export default Aboutus
