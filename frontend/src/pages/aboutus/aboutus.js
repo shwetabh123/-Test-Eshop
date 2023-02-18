@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from "../../components/card/Card";
-import styles from "./Aboutus.module.scss";
+import styles from "./aboutus.module.scss";
 
 
 const Aboutus = () => {
