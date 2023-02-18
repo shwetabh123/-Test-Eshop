@@ -14,29 +14,43 @@ const Footer = () => {
 
     <div className={styles.footer} >
    
-     
-    <div style={{ margin: '10px' }}>
-    <NavLink to="/cancellationrefund"  style={{color:"green"}} >
-       Cancellation & refund
+   <div style={{ margin: '10px' }}>
+    <NavLink to="/aboutus"  style={{color:"green"}} >
+        About Us
     </NavLink>
-</div>
-<div style={{ margin: '10px' }}>
+    </div>
+
+
+    <div style={{ margin: '10px' }}>
     <NavLink to="/contact"  style={{color:"green"}} >
-        Contact
+        Contact Us
+    </NavLink>
+    </div>
+
+
+    
+<div style={{ margin: '10px' }}>
+    <NavLink to="/privacypolicy"  style={{color:"green"}} >
+      Privacy Policy
     </NavLink>
 </div>
 
 
 <div style={{ margin: '10px' }}>
     <NavLink to="/termsofservice" style={{color:"green"}}>
-       Terms of service
+       Terms & Conditions
     </NavLink>
 </div>
-<div style={{ margin: '10px' }}>
-    <NavLink to="/privacypolicy"  style={{color:"green"}} >
-      Privacy Policy
+
+     
+    <div style={{ margin: '10px' }}>
+    <NavLink to="/cancellationrefund"  style={{color:"green"}} >
+       Returns & Refunds
     </NavLink>
-</div>
+    </div>
+   
+
+
 &copy;  {year} All Rights Reserved 
 </div>
 

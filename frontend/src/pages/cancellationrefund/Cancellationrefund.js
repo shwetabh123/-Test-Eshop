@@ -19,7 +19,7 @@ const Cancellationrefund = () => {
                 <Card cardClass={styles.card2}>
                   <h3>Return Policy:</h3>
                   <ul>
-                  <li>Customers can initiate return using App, Website, and Mobile Site.</li>
+                  <li>Customers can initiate return using  Website, and Mobile Site.</li>
                   <li>Customers can initiate return within 30 days from Order Delivery.</li>
 
                 </ul>
