@@ -37,7 +37,7 @@ const OrderDetails = () => {
             <table>
               <thead>
                 <tr>
-                  <th>s/n</th>
+                  <th>S/n</th>
                   <th>Product</th>
                   <th>Price</th>
                   <th>Quantity</th>
@@ -63,7 +63,7 @@ const OrderDetails = () => {
                           style={{ width: "100px" }}
                         />
                       </td>
-                      <td>{price}</td>
+                      <td>Rs {price}</td>
                       <td>{cartQuantity}</td>
                       <td>{(price * cartQuantity).toFixed(2)}</td>
                       <td className={styles.icons}>

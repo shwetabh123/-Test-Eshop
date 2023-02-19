@@ -103,7 +103,7 @@ const decreaseCart = (product) => {
               <div className={styles.content}>
                 <h3>{product.name}</h3>
 
-                <p className={styles.price}>{`$${product.price}`}</p>
+                <p className={styles.price}>{`Rs ${product.price}`}</p>
 
                 <p>{product.desc}</p>
                 <p>

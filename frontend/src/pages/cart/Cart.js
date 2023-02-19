@@ -114,7 +114,7 @@ export const Cart = () => {
                           style={{ width: "100px" }}
                         />
                       </td>
-                      <td>{price}</td>
+                      <td>Rs {price}</td>
 
                       <td>{size}</td>
                       <td>

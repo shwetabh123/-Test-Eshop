@@ -207,7 +207,7 @@ const filteredProducts = useSelector(selectFilteredProducts);
                     </td>
                     <td>{name}</td>
                     <td>{category}</td>
-                    <td>{`$${price}`}</td>
+                    <td>{`Rs  ${price}`}</td>
                     <td>{size}</td>
                     <td>{deliverytime}</td>
                     <td className={styles.icons}>

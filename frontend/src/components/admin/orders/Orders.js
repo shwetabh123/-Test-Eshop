@@ -42,7 +42,7 @@ const Orders = () => {
               <table>
                 <thead>
                   <tr>
-                    <th>s/n</th>
+                    <th>S/n</th>
                     <th>Date</th>
                     <th>Order ID</th>
                     <th>Order Amount</th>
@@ -66,7 +66,7 @@ const Orders = () => {
                         </td>
                         <td>{id}</td>
                         <td>
-                          {"$"}
+                          {"Rs "}
                           {orderAmount}
                         </td>
                         <td>
