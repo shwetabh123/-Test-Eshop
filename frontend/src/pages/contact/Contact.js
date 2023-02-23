@@ -93,7 +93,7 @@ const Contact = () => {
                 </span>
                 <span>
                 <FaFacebook/>
-                  <a href='https://www.facebook.com/shwetabh.srivastava.33'></a>
+                  <a href="https://www.facebook.com/shwetabh.srivastava.33">shwetabh.srivastava.33</a>
                 </span>
                 <span>
                 <FaYoutube/>
