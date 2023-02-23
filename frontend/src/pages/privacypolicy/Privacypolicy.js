@@ -20,7 +20,7 @@ This Privacy Policy also explains the rights you have concerning the Personal
 Data that we process and how you can exercise these rights.
 </p>
 
-<h3>Principles</h3>
+<h2>Principles</h2>
            
 <p>YOURCOMPANY manifests its commitment to privacy and data protection
 by embracing the following principles.
@@ -32,7 +32,7 @@ YOURCOMPANY retains no more data than necessary or for a longer
 period than needed.
 YOURCOMPANY protects Personal Data with appropriate security measures.
 </p>
-<h3>Data We Collect</h3>
+<h2>Data We Collect</h2>
 
 <p>This policy applies only to information collected on the Site. We collect two
 types of information from visitors to our websites: 1. Personal Data.
@@ -46,7 +46,7 @@ personally. Examples of non-Personal Data may include (but are not limited
 to) cookies, web beacons, and demographic information.
 </p>
 
-<h3>Data Use</h3>
+<h2>Data Use</h2>
 
 <p>onlinedmart.com uses the collected data for various purposes:
 To provide and maintain our service
@@ -61,7 +61,7 @@ other goods, services and events which we offer that are similar to those  that 
 opted not to receive such information
 </p>
 
-<h3>Data Access</h3>
+<h2>Data Access</h2>
 
 <p>Your Personal Data is available and accessible only by those who need the
 data to accomplish the intended processing purpose. To the extent
@@ -72,7 +72,7 @@ but not limited to, using personal information you share with us or that we
 indirectly collect to verify your identity and for fraud prevention purposes.
 
 </p>
-<h3>Data Security</h3>
+<h2>Data Security</h2>
 
 <p>The security of your data is important to us but remember that no method of
 transmission over the Internet or method of electronic storage is 100%
@@ -82,7 +82,7 @@ your Personal Data, we cannot guarantee its absolute security
 </p>
 
 
-<h3>Data Disclosure</h3>
+<h2>Data Disclosure</h2>
 
 <p>Under certain circumstances, YOURCOMPANY may be required to disclose
 your Personal Data if required to do so by law or in response to valid
@@ -101,7 +101,7 @@ To protect against legal liability
 
 </p>
 
-<h3>Your Data Protection Rights</h3>
+<h2>Your Data Protection Rights</h2>
 <p>Right to access
     
     You have the right to request information about the Personal Data we hold
@@ -117,7 +117,7 @@ includes the Personal Data you have submitted to us.
 
 </p>
 
-<h3>Exercise Your Rights (Contact Us)</h3>
+<h2>Exercise Your Rights (Contact Us)</h2>
 <p>We take data protection very seriously and therefore we have dedicated
 Customer Service personnel to handle your requests in relation to your rights
 stated above. You can always reach them at Support@eshop.com.

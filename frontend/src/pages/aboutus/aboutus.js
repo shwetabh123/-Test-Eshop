@@ -7,13 +7,13 @@ const Aboutus = () => {
   return (
     <section>
     <div className={`container ${styles.contact}`}>
-      <h2>Onlinedmart/ About</h2>
+      <h1>Onlinedmart/ About</h1>
       <div className={styles.section}>
        
 
         <div className={styles.details}>
           <Card cardClass={styles.card2}>
-            <h3>Introduction:</h3>
+            <h2>Introduction:</h2>
             <ul>
             <li>Onlinedmart is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products,Onlinedmart aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. The brand is making a conscious effort to bring the power of fashion to shoppers with an array of the latest and trendiest products available in the country.</li>
           
