@@ -23,8 +23,8 @@ const logo = (
     <Link to="/">
       <h2>
         Online<span>Dmart</span>.
-        -Buy Women's Clothing Store in India
       </h2>
+      <h3> -Buy Women's Clothing Store in India</h3>
     </Link>
   </div>
 );
