@@ -6,7 +6,7 @@ const Termsofservice = () => {
     return (
         <section>
           <div className={`container ${styles.contact}`}>
-            <h2>Terms and Conditions</h2>
+            <h1>Terms and Conditions</h1>
             <div className={styles.section}>
              
     
@@ -21,7 +21,7 @@ use of the Site. By using the Site, you agree to be bound by these Terms.
 If you do not agree to these Terms, please do not use or access the Site.
 Your use of the Site constitutes your agreement to follow and be bound
 by these Terms.</p>
-<h2>Jurisdiction</h2>
+<h3>Jurisdiction</h3>
 <p>These Terms and Conditions and your use of the Site are governed by the
 laws of the YOURCOMPANY CITY AND COUNTRY OF RESIDENCE, without
 regard to any conflict of law provisions. The courts of general jurisdiction
@@ -29,7 +29,7 @@ will have exclusive jurisdiction over any and all disputes arising out of,
 relating to, or concerning these Terms and Conditions and/or the Site or in
 which these Terms and Conditions and/or the Site are a material fact.</p>
 
-<h2>Terms Modification</h2>
+<h3>Terms Modification</h3>
       <p>The Company may modify this Terms and Conditions at any time by
 publishing a revised version on the Site. We reserve the right to update or
 modify these Terms at any time without prior notice. We encourage you to
@@ -40,7 +40,7 @@ Terms and Conditions, you agree to be bound by the modified terms.</p>
 
 
 
-<h2>Content Permission & Restrictions</h2>
+<h3>Content Permission & Restrictions</h3>
       <p>Unless otherwise noted, the design of the Site, including information, data,
 text, photographs, videos, audio clips, written posts, articles, comments,
 software, scripts, graphics, and interactive features that are part of the Site
@@ -61,7 +61,7 @@ state, or international laws</p>
 
                   
 
-<h2>Email Communication</h2>
+<h3>Email Communication</h3>
       <p>By purchasing on the Site or otherwise creating an account on the Site, you
 understand that we may send you communications or data regarding our
 products and services. You agree to receive such communications from us.
@@ -80,7 +80,7 @@ Please keep us informed of any changes in your email address so you may
 continue to receive our communications without interruption.</p>  
 
 
-<h2>Order Confirmation</h2>
+<h3>Order Confirmation</h3>
       <p>When you place an order, you should receive an acknowledgement e-mail
 confirming receipt of your order.
 Order Confirmation
@@ -97,17 +97,17 @@ We also may require verification of information prior to the acceptance
 and/or shipment of any order.</p>  
 
 
-<h2>Links to Third Party Site</h2>
+<h3>Links to Third Party Site</h3>
       <p>The Site may include links to other websites maintained by third parties.
 These links are provided to you solely as a convenience. Your access to these
 third party websites is at your own risk, and we will have no liability arising
 out of or related to such websites or your access to or use of such websites.</p>  
 
-<h2>Privacy</h2>
+<h3>Privacy</h3>
       <p>We are committed to protecting the privacy of the visitors to the Site. For
 information on how information is collected, used, or disclosed by us in
 connection with your use of the Site, please consult our Privacy Policy</p>  
-<h2>Customer Service</h2>
+<h3>Customer Service</h3>
       <p>If you do not understand any of the foregoing Terms or if you have any
 questions or comments, please contact Customer Service at
 Support@eshop.com</p> 
