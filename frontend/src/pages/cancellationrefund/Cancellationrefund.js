@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Card from "../../components/card/Card";
-import styles from "./Cancellation.module.scss";
+import styles from "./Cancellationrefund.module.scss";
 
 
 
