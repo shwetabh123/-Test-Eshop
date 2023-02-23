@@ -85,7 +85,7 @@ const Contact = () => {
                 </span>
                 <span>
                   <FaLinkedinIn/>
-                  <p>shwetabh-srivastava-529a3826</p>
+                  <a href="https://www.linkedin.com/in/shwetabh-srivastava-529a3826/">shwetabh-srivastava-529a3826</a>
                 </span>
                 <span>
                 <FaTwitter/>
@@ -97,7 +97,7 @@ const Contact = () => {
                 </span>
                 <span>
                 <FaYoutube/>
-                  <p>shwetabh-srivastava-529a3826</p>
+                <a href="https://www.youtube.com/channel/UCeXtiol8NGynwqetInQtaoA">shwetabh srivastava</a>
                 </span>
               </div>
             </Card>
