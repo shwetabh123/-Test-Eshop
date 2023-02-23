@@ -19,15 +19,15 @@ const Cancellationrefund = () => {
                 <Card cardClass={styles.card2}>
                   <h2>Return Policy:</h2>
                   <ul>
-                  <li>Customers can initiate return using  Website, and Mobile Site.</li>
-                  <li>Customers can initiate return within 30 days from Order Delivery.</li>
+                  <li style="font-size:50px">Customers can initiate return using  Website, and Mobile Site.</li>
+                  <li style="font-size:50px" >Customers can initiate return within 30 days from Order Delivery.</li>
 
                 </ul>
 
                 <h2>Cancellation Policy:</h2>
                   <ul>
-                  <li>You can cancel an order by clicking on the Cancel link/button.</li>
-                  <li>You will be able to cancel an order till the time it is dispatched from the seller. In case you are unable to cancel an order from the app or website, you can reject the order at doorstep.</li>
+                  <li style="font-size:50px" >You can cancel an order by clicking on the Cancel link/button.</li>
+                  <li style="font-size:50px">You will be able to cancel an order till the time it is dispatched from the seller. In case you are unable to cancel an order from the app or website, you can reject the order at doorstep.</li>
 
                 </ul>
 
