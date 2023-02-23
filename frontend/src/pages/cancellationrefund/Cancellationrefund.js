@@ -33,13 +33,13 @@ const Cancellationrefund = () => {
 
                 <h2>Refund Policy:</h2>
                 <h3>Refund against Cancellation:</h3>
-                  <ul>
+                  <ul class="bigFont">
                   <li>Customers shall get Refund against Cancellation of Order or any failed payment by way of credit to the original mode of payment - Credit/Debit Card, or Net banking or Third Party Wallet.</li>
            
 
                 </ul>
                 <h3>Refund against Return:</h3>
-                  <ul>
+                  <ul class="bigFont">
                   <li>In case of Cash on Delivery (COD) orders, customers can choose to get their refund on Return(s) through one of the below options. The refund shall be initiated within 5 days from the date of return pickup.</li>
                   <li>Refund credited to the Bank Account entered by the customer at the time of initiating the return request.</li>
                   <li>In case the payment is made by Credit/Debit Card, Net Banking or Third Party Wallet, you may get the refund within 7 to 15 working days. Kindly note that there may be delays in refund as they're handled by the Bank.</li>
