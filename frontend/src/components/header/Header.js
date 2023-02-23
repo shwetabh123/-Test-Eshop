@@ -23,7 +23,7 @@ const logo = (
     <Link to="/">
       <h2>
         Online<span>Dmart</span>.
-        
+        -Buy Women's Clothing Store in India
       </h2>
     </Link>
   </div>
@@ -121,6 +121,7 @@ const Header = () => {
               <li className={styles["logo-mobile"]}>
                 {logo}
                 <FaTimes size={22} color="#fff"  />
+               
               </li>
 
               <li>
