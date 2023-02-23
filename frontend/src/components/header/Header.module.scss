@@ -32,6 +32,15 @@
       }
     }
   
+    .logo a h5 {
+      width: 50%;
+      color:chartreuse;
+      cursor: pointer;
+      span {
+        color: orangered;
+      }
+    }
+
     nav {
       width: 75%;
       display: flex;
